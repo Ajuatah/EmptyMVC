@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmptyMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,27 @@ namespace EmptyMVC.Controllers
             ViewBag.LastName = "Andropov";
             ViewBag.Address = "Molyko-Buea";
             return View();
+        }
+
+        public ActionResult GetEmployee()
+        {
+            Employee employee = new Employee()
+            {
+                EmployeeID = 1,
+                EmployeeName = "Andropov Ajebua",
+                Address = "Molyko-buea",
+                DataOfJoing = DateTime.Now,
+                MaritalStatus =1,
+                IsEligibleFOrLoan = true,
+                Salary = 1000000.00m,
+                CreatedBy = "Admin",
+                CreatedDate = DateTime.Now
+            };
+
+            ViewBag.Employee = employee;
+            return View();
+          
+
         }
     }
 }

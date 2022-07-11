@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "GetEmployee";
+}
+
+<h2>Employee Details</h2>
+
+<table  class="table table-bordered table-hover">
+    <tr class="btn-primary">
+        <th>  Employee ID  </th>
+        <th>  Employee Namw  </th>
+        <th>  Employee Address </th>
+        <th>  Employee Data of Joining </th>
+        <th>  Employee Marital Status </th>
+        <th>  Is eligable for Loan </th>
+        <th>  Employee Salary </th>
+        <th>  Created By  </th>
+        <th>  Created Date </th>
+
+    </tr>
+    <tr>
+        <td>@ViewBag.Employee.EmployeeID</td>
+        <td>@ViewBag.Employee.EmployeeName</td>
+        <td>@ViewBag.Employee.Address</td>
+        <td>@ViewBag.Employee.DataOfJoing</td>
+        <td>@ViewBag.Employee.MaritalStatus</td>
+        <td>@ViewBag.Employee.IsEligibleFOrLoan</td>
+        <td>@ViewBag.Employee.Salary</td>
+        <td>@ViewBag.Employee.CreatedBy</td>
+        <td>@ViewBag.Employee.CreatedDate</td>
+
+
+    </tr>
+</table>
+
